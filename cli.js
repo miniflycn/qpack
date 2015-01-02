@@ -3,12 +3,12 @@
 !function () {
   'use strict';
 
-  var fs = require('fs')
+  var fs = require('fs-extra')
     , path = require('path')
     , qpack = require('./')
     , cwd = process.cwd()
     , HTML_REG = /\.html$/
-    , mkdirp = require('mkdirp')
+    , mkdirp = fs.mkdirs
     , program = require('commander');
 
   function translate(root, dist) {
@@ -34,7 +34,6 @@
   }
 
   program
-    .version(qpack.version)
     .command('tran [src] [dist]')
     .description('translate Que component')
     .action(function (src, dist) {
@@ -43,6 +42,25 @@
       translate(src, dist);
     });
 
-  program.parse(process.argv);
+  program
+    .command('app [path]')
+    .description('set up a local server to run the component')
+    .option('-p, --port <port>', 'listen which port')
+    .action(function (path, options) {
+      path = path || cwd;
+      qpack.app(path, options.port);
+    });
+
+  program
+    .command('init [path]')
+    .description('initialize a component')
+    .action(function (path) {
+      path = path || cwd;
+      qpack.init(path);
+    });
+
+  program
+    .version(qpack.version)
+    .parse(process.argv);
 
 }();

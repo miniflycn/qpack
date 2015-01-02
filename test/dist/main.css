@@ -1,15 +1,15 @@
-.$__div {
-  *zoom: 1;
+.$__container {
+    *zoom: 1;
 }
 
-.$__div:after {
-  clear: both;
+.$__container:after {
+    clear: both;
 }
 
-.$__div:before,
-.$__div:after {
-  content: '';
-  display: table;
+.$__container:before,
+.$__container:after {
+    content: '';
+    display: table;
 }
 
 .$__link {

@@ -1,17 +1,16 @@
 {
   "name": "qpack",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Ques component package CLI",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "dependencies": {
     "commander": "^2.6.0",
     "connect": "^3.3.3",
     "cssgrace": "^1.0.0",
+    "fs-extra": "^0.13.0",
     "htmlparser2": "^3.8.2",
-    "mkdirp": "^0.5.0",
+    "map-stream": "0.0.5",
+    "middleware-pipe": "^1.0.1",
     "postcss": "^4.0.0",
     "postcss-custom-selectors": "^1.1.0",
     "postcss-media-minmax": "^1.1.0",
