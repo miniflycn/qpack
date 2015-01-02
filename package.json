@@ -1,0 +1,40 @@
+{
+  "name": "qpack",
+  "version": "0.0.0",
+  "description": "Ques component package CLI",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "commander": "^2.6.0",
+    "connect": "^3.3.3",
+    "cssgrace": "^1.0.0",
+    "htmlparser2": "^3.8.2",
+    "mkdirp": "^0.5.0",
+    "postcss": "^4.0.0",
+    "postcss-custom-selectors": "^1.1.0",
+    "postcss-media-minmax": "^1.1.0",
+    "postcss-nested": "^0.2.0"
+  },
+  "devDependencies": {
+    "should": "^4.4.2",
+    "mocha": "*"
+  },
+  "bin": {
+    "qpack": "cli.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miniflycn/qpack.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miniflycn/qpack/issues"
+  },
+  "homepage": "https://github.com/miniflycn/qpack"
+}

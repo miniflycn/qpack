@@ -1,0 +1,17 @@
+.$__div {
+  *zoom: 1;
+}
+
+.$__div:after {
+  clear: both;
+}
+
+.$__div:before,
+.$__div:after {
+  content: '';
+  display: table;
+}
+
+.$__link {
+    color: #000;
+}
