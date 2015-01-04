@@ -56,3 +56,5 @@ qpack
 > CSS预处理技术应用广泛，例如：`Sass`、`LESS`，为什么不使用CSS预处理技术呢？
 
 简单的说在`Component化`之后，实际上我们对CSS的`嵌套(nested)`、`混入(mixin)`、`函数(function)`将远远减少，实际上基于标准的CSS后知处理技术已经够用了，详细的分析请参见：[聊聊CSS postproccessors](https://app.yinxiang.com/shard/s30/sh/621a3a5f-49bd-4140-864d-9a1a66f675a6/a4bb7c5190d165ad2001e64aec17a624)
+
+由于印象笔记最近被有关部门关闭分享，所以请查看这里：https://github.com/miniflycn/qpack/issues/3
